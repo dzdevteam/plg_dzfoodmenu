@@ -5,13 +5,21 @@
             <field
                 name="title"
                 type="text"
+                filter="string"
                 label="PLG_CONTENTDZFOODMENU_FORM_LBL_TITLE"
                 description="PLG_CONTENTDZFOODMENU_FORM_DESC_TITLE" />
             <field
                 name="description"
                 type="editor"
+                filter="safehtml"
                 label="PLG_CONTENTDZFOODMENU_FORM_LBL_DESCRIPTION"
                 description="PLG_CONTENTDZFOODMENU_FORM_DESC_DESCRIPTION" />
+        </fieldset>
+    </fields>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="title" type="hidden" filter="string" />
+            <field name="description" type="hidden" filter="safehtml" />
         </fieldset>
     </fields>
 </form>
