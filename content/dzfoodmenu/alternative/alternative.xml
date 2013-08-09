@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <fields name="attribs">
+        <fieldset name="alternative">
+            <field
+                name="title"
+                type="text"
+                label="PLG_CONTENTDZFOODMENU_FORM_LBL_TITLE"
+                description="PLG_CONTENTDZFOODMENU_FORM_DESC_TITLE" />
+            <field
+                name="description"
+                type="editor"
+                label="PLG_CONTENTDZFOODMENU_FORM_LBL_DESCRIPTION"
+                description="PLG_CONTENTDZFOODMENU_FORM_DESC_DESCRIPTION" />
+        </fieldset>
+    </fields>
+</form>
