@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" group="content">
-	<name>plg_content_dzfoodmenu</name>
-	<author>DZ Team</author>
-	<creationDate>July 2013</creationDate>
-	<copyright>Copyright (C) 2013 - DZ Team</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>support@dezign.vn</authorEmail>
-	<authorUrl>dezign.vn</authorUrl>
-	<version>1.0.0</version>
-	<description>PLG_CONTENT_DZFOODMENU_XML_DESCRIPTION</description>
+    <name>plg_content_dzfoodmenu</name>
+    <author>DZ Team</author>
+    <creationDate>July 2013</creationDate>
+    <copyright>Copyright (C) 2013 - DZ Team</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>support@dezign.vn</authorEmail>
+    <authorUrl>dezign.vn</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_CONTENT_DZFOODMENU_XML_DESCRIPTION</description>
 
-	<files>
-		<filename plugin="dzfoodmenu">dzfoodmenu.php</filename>
-		<filename>index.html</filename>
-        <folder>group</folder>
-	</files>
-	<languages>
-		<language tag="en-GB">en-GB.plg_content_dzfoodmenu.ini</language>
-		<language tag="en-GB">en-GB.plg_content_dzfoodmenu.sys.ini</language>
-	</languages>
-	<config>
-		<fields name="params">
-			
-		</fields>
-	</config>
+    <files>
+        <filename plugin="dzfoodmenu">dzfoodmenu.php</filename>
+        <filename>index.html</filename>
+        <folder>alternative</folder>
+    </files>
+    <media folder="media" destination="plg_content_dzfoodmenu">
+        <filename>dzfoodmenu.js</filename>
+        <filename>index.html</filename>
+    </media>
+    <languages>
+        <language tag="en-GB">en-GB.plg_content_dzfoodmenu.ini</language>
+        <language tag="en-GB">en-GB.plg_content_dzfoodmenu.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            
+        </fields>
+    </config>
 
 </extension>
