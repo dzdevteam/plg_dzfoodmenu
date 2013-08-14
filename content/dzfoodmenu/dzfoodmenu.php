@@ -46,7 +46,7 @@ class PlgContentDZFoodMenu extends JPlugin
     }
     
     public function onContentBeforeSave($context, &$table, $isNew) {
-        if ($context != 'com_categories.category' && JRequest::getCmd('extension') != 'com_dzfoodmenu.dishes.catid')
+        if ( !($context == 'com_categories.category' && JRequest::getCmd('extension') == 'com_dzfoodmenu.dishes.catid') )
             return true;
         
         // First get our form
