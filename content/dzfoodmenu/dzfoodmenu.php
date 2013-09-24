@@ -16,7 +16,7 @@ class PlgContentDZFoodMenu extends JPlugin
     protected $_name='dzfoodmenu';
     
     function __construct(&$subject, $config = array()) {
-        parent::__construct(&$subject, $config = array());
+        parent::__construct($subject, $config = array());
         
         // Load our language and form path
         $this->loadLanguage();
@@ -45,7 +45,7 @@ class PlgContentDZFoodMenu extends JPlugin
         return true;
     }
     
-    public function onContentBeforeSave($context, &$table, $isNew) {
+    public function onContentBeforeSave($context, $table, $isNew) {
         if ( !($context == 'com_categories.category' && JRequest::getCmd('extension') == 'com_dzfoodmenu.dishes.catid') )
             return true;
         
